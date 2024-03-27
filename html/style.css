@@ -1,0 +1,63 @@
+.a {
+     color: red;
+     border: 2px solid black;
+     text-align: center;
+     background-color: yellowgreen;
+     font-family: sans-serif;
+     text-transform: uppercase;
+     text-shadow: 2px 2px 8px green;
+     padding: 10px;
+     border-radius: 20px;
+
+}
+.b{
+     color: red;
+     border: 2px solid black;
+     text-align: center;
+     background-color: yellowgreen;
+     font-family: sans-serif;
+     text-transform: uppercase;
+     text-shadow: 2px 2px 8px green;
+     padding: 10px;
+     border-radius: 20px;
+
+}
+#x{
+     color: red;
+     border: 2px solid black;
+     text-align: center;
+     background-color: goldenrod;
+     font-family: 'Times New Roman', Times, serif;
+     text-transform: uppercase;
+     text-shadow: 2px 2px 8px green;
+     padding: 10px;
+     border-radius: 20px;
+
+}
+#d{
+     color: green;
+     border: 2px solid black;
+     text-align: center;
+     background-color: goldenrod;
+     font-family: 'Times New Roman', Times, serif;
+     text-transform: uppercase;
+     text-shadow: 2px 2px 8px red;
+     padding: 10px;
+     border-radius: 20px;
+
+}
+.table{
+     text-align: center;
+     color:red;
+     border: 2px solid black;
+     text-align: center;
+     background-color:yellowgreen;
+     font-family: 'Times New Roman', Times, serif;
+     text-transform: uppercase;
+     text-shadow: 2px 2px 8px red;
+     padding: 10px;
+     border-radius: 20px;
+     margin-top: 5px;
+ 
+}
+
