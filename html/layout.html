@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+
+            height: 100vh;
+            background-color: rgb(52, 242, 52);
+            display: flex;
+        }
+
+        .box{
+
+           
+            background-color: yellow;
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        #box-1{
+
+            width: 20%;
+        }
+
+        #box-2{
+
+            width: 60%;
+        }
+
+        #box-3{
+
+            width: 20%;
+        }
+
+        #inner-1{
+
+            background-color: rgb(41, 175, 41);
+            height: 30%;
+        }
+
+        #inner-2{
+
+            height: 70%;
+            background-color: red;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .inner-inner{
+
+            width: 48%;
+            height: 45%;
+            background-color:blue;
+            border: 2px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2">
+            <div class="box-inner" id="inner-1"></div>
+            <div class="box-inner" id="inner-2">
+                <div class="inner-inner"></div>
+                <div class="inner-inner"></div>
+                <div class="inner-inner"></div>
+                <div class="inner-inner"></div>
+            </div>
+        </div>
+        <div class="box" id="box-3">
+            <div class="box-inner" id="inner-1"></div>
+            <div class="box-inner" id="inner-2"></div>
+        </div>
+
+    </div>
+</body>
+</html>
