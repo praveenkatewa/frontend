@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      .container {
+        height: 100vh;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        width: 30%;
+        height: 80%;
+        /* border: 2px solid black; */
+      }
+
+      .form {
+        height: 70%;
+        border: 1px solid rgb(219, 219, 219);
+        margin: 8px;
+        border-radius: 5px;
+      }
+
+      .account {
+        border: 1px solid rgb(219, 219, 219);
+        height: 10%;
+        margin: 8px;
+        border-radius: 5px;
+      }
+
+      .logo {
+        border: 1px solid rgb(219, 219, 219);
+        height: 20%;
+        margin: 8px;
+        border-radius: 5px;
+      }
+
+      .form-logo {
+        height: 20%;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form-input {
+        height: 40%;
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .links {
+        height: 30%;
+        /* border: 2px solid black; */
+      }
+
+      .form-logo img {
+        height: 100%;
+        width: 60%;
+      }
+
+      .form-input input {
+        width: 100%;
+        height: 20%;
+        margin: 5px;
+        padding: 5px;
+        border: none;
+        border: 1px solid rgb(219, 219, 219);
+        border-radius: 4px;
+      }
+
+      .links {
+        text-align: center;
+        position: relative;
+      }
+
+      .or {
+        position: absolute;
+        left: 50px;
+      }
+
+      .or::before {
+        content: "";
+        border: 1px solid rgb(219, 219, 219);
+        width: 35%;
+        position: absolute;
+        left: 10px;
+        top: 5px;
+      }
+
+      .or::after {
+        content: "";
+        border: 1px solid rgb(219, 219, 219);
+        width: 35%;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+      }
+
+      .inner-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .facebook {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #385185;
+      }
+
+      .forg {
+        text-decoration: none;
+        margin: 7px 0px;
+        font-size: 15px;
+        color: #385185;
+      }
+
+      .facebook i {
+        font-size: 20px;
+      }
+
+      .account {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      }
+
+      .account a {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(0, 149, 246);
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo img {
+        width: 35%;
+        height: 40%;
+        margin: 0px 3px;
+      }
+
+      .form div {
+        width: 70%;
+        margin: auto;
+        margin-top: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: rgb(0, 149, 246);
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+      }
+
+      #box1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .im {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">
+        <img
+          src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk"
+          alt=""
+          class="im"
+        />
+      </div>
+      <div class="box">
+        <div class="form">
+          <div class="form-logo">
+            <img
+              src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram.png"
+              alt=""
+            />
+          </div>
+          <div class="form-input">
+            <input type="text" placeholder="Username" />
+            <input type="text" placeholder="Password" />
+            <input type="submit" value="Log in" />
+          </div>
+          <div class="links">
+           <span></span><div class="or">OR</div> <span></span>
+            <div class="inner-links">
+              <a href="" class="facebook">
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span>Login with facebook </span>
+              </a>
+              <a href="" class="forg">Forgotten Your password?</a>
+            </div>
+          </div>
+        </div>
+        <div class="account">
+          <div class="account-links">
+            <span>Dont have an account?</span>
+            <span><a href="">Signup</a></span>
+          </div>
+        </div>
+        <div class="logo">
+          <img
+            src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png"
+            alt=""
+          />
+          <img
+            src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
