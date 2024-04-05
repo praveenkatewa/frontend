@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          * {
+               margin: 0px;
+               padding: 0px;
+               /* box-sizing: border-box; */
+
+          }
+
+          .header {
+
+               height: 50px;
+               /* border: 2px solid black; */
+               display: flex;
+               justify-content: space-between;
+               position: sticky;
+               top: 0px;
+               background-color: white;
+              
+
+
+          }
+
+          .header-left {
+               margin-left: 0px;
+               margin-top: 0px;
+          }
+
+          .header-right {
+               display: inline;
+               width: auto;
+
+
+
+          }
+
+          .header-right a {
+               text-decoration: none;
+               font-size: 30px;
+               margin: 15px;
+               padding: 10px;
+               font-size: 25px;
+               
+               color: black;
+
+
+          }
+
+          .container {
+               height: 90vh;
+               background-image: url(https://www.w3schools.com/w3images/architect.jpg) ;
+               width: 100%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+
+          span {
+               background-color: rgb(21, 19, 19);
+               color: white;
+               border: 5px;
+               font-size: 50px;
+          }
+
+          .br {
+               color: white;
+
+          }
+
+          .projects {
+               height: 10vh;
+
+               /* border: 2px solid bisque; */
+
+          }
+
+          .projects h2 {
+               margin-top: 50px;
+               margin-left: 50px;
+          }
+
+          .house-img {
+               height: 100%;
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-evenly;
+               /* border: 2px solid black; */
+               /* border-top: 2px solid black; */
+
+          }
+
+          .box {
+               width: 350px;
+               height: 250px;
+               margin: 5px;
+               padding: 5px;
+
+          }
+
+          .box img {
+               width: 100%;
+               height: 100%;
+          }
+
+          .box span {
+               background-color: black;
+               color: wheat;
+          }
+
+          .display-topleft {
+               background-color: black;
+               color: white;
+
+          }
+
+          .About {
+               height: 20%;
+               /* border: 2px solid bisque; */
+
+
+          }
+
+          .About h2 {
+               margin-left: 50px;
+               margin-top: 50px;
+          }
+
+          .about-contain {
+               height: 20%;
+               margin: 5px;
+               letter-spacing: 3px;
+               /* line-height: 25px; */
+               margin-left: 50px;
+               /* border: 2px solid black; */
+          }
+
+          .card {
+               border: 2px solid black;
+               height: 100%;
+               
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-evenly;
+               /* border: 2px solid black; */
+               border-top: 2px solid black;
+          }
+
+          .box-card-1{
+               border: 2px solid black; 
+               width: 20%;
+          }
+          .box-card-2{
+               border: 2px solid black; 
+               width: 20%;
+          }
+          .box-card-3{
+               border: 2px solid black; 
+               width: 20%;
+          }
+          .box-card-4{
+               border: 2px solid black;
+               width: 20%; 
+          }
+         
+          .contact button{
+               width: 100%;
+               background-color: floralwhite;
+               text-align: center;
+               font-size: 20px;
+
+               
+
+               
+          }
+          .contact:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+         
+          .card-name{
+
+
+          }
+          .work{
+
+          }
+          .about-work{
+               height: 48%;
+               letter-spacing: 3px;
+          
+            margin-left: 0px;
+
+          }
+
+          .footer{
+            height: 60px;
+            border: 2px solid black;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            font-size: 20px;
+        }
+        .p p{
+            color: white;
+        }
+        .p p a{
+            text-decoration: none;
+            color: white;
+            text-decoration: underline;
+            font-size: 18px;
+        }
+          .p a:hover{
+               color: green;
+
+     }
+     
+     .house-name{
+          font-size: 20px;
+          width: 20%;
+          position: absolute;
+          text-align: center;
+          padding: 5px;
+         
+
+          
+     }
+     .image-road{
+          margin: 10px;
+          padding: auto;
+          display: flex;
+          justify-content: center;
+     }
+     .form{
+          height: 50vh;
+          margin: 20px;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+     }
+     .form-input input{
+          width: 96%;
+          padding: 12px;
+          margin-bottom: 12px;
+
+     }
+     .send-message{
+          background-color: black;
+            color: white;
+            width: 20%;
+            height: 10%;
+            padding: 1px;
+            font-size: 15px;
+            text-align: center;
+     }
+     .h3{
+          height: 10vh;
+          margin-top: 30px;
+            margin-left: 20px;
+
+     }
+     </style>
+</head>
+
+<body>
+
+     <div class="header">
+          <div class="header-left">
+               <h1>BR Architects</h1>
+          </div>
+          <div class="header-right">
+               <a href="">Projects</a>
+               <a href="">About</a>
+               <a href="">contact</a>
+
+          </div>
+     </div>
+
+     <div class="container">
+          <div class="br">
+               <h1><span>BR</span>Architechts</h1>
+          </div>
+
+
+     </div>
+     <div class="projects">
+          <h2>Projects</h2>
+     </div>
+     <div class="house-img">
+          <div class="box">
+               <div class="display-topleft"><span class="house-name">Summer House</span></div>
+               <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+          </div>
+          <div class="box">
+               <div class="display-topleft"><span class="house-name">Brick House</span></div>
+               <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+          </div>
+          <div class="box">
+               <div class="display-topleft"><span class="house-name">Renovated</span> </div>
+               <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+          </div>
+          <div class="box">
+               <div class="display-topleft"><span class="house-name">Barn House</span></div>
+               <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+          </div>
+          <div class="box">
+               <div class="display-topleft"><span class="house-name">Summer House</span></div>
+               <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+          </div>
+          <div class="box">
+               <div class="display-topleft"><span class="house-name">Brick House</span></div>
+               <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+          </div>
+          <div class="box">
+               <div class="display-topleft"><span class="house-name">Renovated</span></div>
+
+               <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+          </div>
+          <div class="box">
+               <div class="display-topleft"><span class="house-name">Barn house</span></div>
+               <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+          </div>
+     </div>
+
+     <div class="About">
+          <h2>About</h2>
+     </div>
+     <div class="about-contain">
+          <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+               ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+               deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+               aliquip ex ea commodo consequat.
+
+          </p>
+     </div>
+
+     <div class="card">
+          <div class="box-card-1">
+               <div class="card-img-1"><img src="https://www.w3schools.com/w3images/team2.jpg"  width="100%"></div>
+               <div class="card-name"><h1>john doe</h1></div>
+               <div class="work"><h3>ceo & founder</h3></div>
+               <div class="about-work"><p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                    pellentesque elementum.</p></div>
+               <div class="contact"><button >contact</button></div>
+          </div>
+          <div class="box-card-2">
+               <div class="card-img"><img src="https://www.w3schools.com/w3images/team1.jpg"width="100%" alt=""></div>
+               <div class="card-name"><h1>Jane Doe</h1></div>
+               <div class="work"><h3>Jane Doe</h3></div>
+               <div class="about-work"><p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                    pellentesque elementum.</p></div>
+               <div class="contact"><button>contact</button></div>
+          </div>
+          <div class="box-card-3">
+               <div class="card-img"><img src="https://www.w3schools.com/w3images/team3.jpg"width="100%" alt=""></div>
+               <div class="card-name"><h1>Mike Ross</h1></div>
+               <div class="work"><h3>Architect</h3></div>
+               <div class="about-work"><p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                    pellentesque elementum</p>.</div>
+               <div class="contact"><button>contact</button></div>
+          </div>
+          <div class="box-card-4">
+               <div class="card-img"><img src="https://www.w3schools.com/w3images/team4.jpg"width="100%" alt=""></div>
+               <div class="card-name"><h1>Dan Star</h1></div>
+               <div class="work"><h3>Architect</h3></div>
+               <div class="about-work"><p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales
+                    pellentesque elementum.</p></div>
+               <div class="contact"><button>contact</button></div>
+          </div>
+
+     </div>
+
+     <div >
+          <h2 class="contacts"> contact</h2>
+          <h3 class="h3">lets get in touch and talk about your next project</h3>
+     </div>
+
+     
+     <div class="form">
+         
+          <form action="" class="form-input">
+               <input type="text" placeholder="name">
+               <input type="email" placeholder="email">
+               <input type="text" placeholder="subject">
+               <input type="text" placeholder="comment">
+               <button class="send-message">send message</button>
+          </form>
+     </div>
+
+     <div class="image-road">
+          <img class="im-road "src="https://www.w3schools.com/w3images/map.jpg"width="80%" alt="">
+     </div>
+
+     <div class="footer">
+          <div class="p">
+              <p>Powered by <a href="w3.css">w3.css</a></p>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
