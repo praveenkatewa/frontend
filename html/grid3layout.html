@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh;
+ }
+
+
+  header {
+    background-color: #333;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    grid-column: 1 / span 2; 
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    grid-column: 2; 
+  }
+
+  aside {
+    background-color: #ddd;
+    padding: 20px;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    grid-column: 1 / span 2; 
+    
+  }
+
+  .box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <header>
+    <h1>Header</h1>
+  </header>
+
+  <aside>
+    <h2>Sidebar</h2>
+    
+  </aside>
+
+  <main>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </main>
+
+  <footer>
+    <h1>Footer</h1>
+  </footer>
+</div>
+
+</body>
+</html>
