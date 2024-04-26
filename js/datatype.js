@@ -94,4 +94,14 @@
      // else{
      //      console.log("number not found")
      // }
-     
+     let a = prompt("Please enter something:");
+     if(a>5){
+          console.log("postive number")
+     }
+     else if(a<5){
+          console.log("-ve number")
+     }
+     else{
+          console.log("number not found")
+     }
+
