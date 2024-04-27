@@ -243,6 +243,34 @@ if(a%5==0 &&b%11==0){
 // }
 
 
+// 90 - 1500
+// 75-- 1000
+// 60 - 500
+// 50- 100
+// in else if   (any true value come it stop and in if if ,,,any true come it also work to check all condtion)
+/*
+let marks=90;
+
+if(marks>90){
+     console.log("1500");
+} if(marks>75){
+     console.log("1000");
+} if(marks>60){
+    
+     console.log("500");
+     console.log("100");
+}
+if(marks>50){
+     console.log("100");
+}else{
+     console.log("no prize")
+}
+*/
+
+// qes
+
+
+
 
 
 
