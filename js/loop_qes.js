@@ -128,5 +128,91 @@ sum= lastDigit +firstDigit;
 
 console.log(sum)
 
+
+
+let number = 435;
+let product = 1;
+
+while (number > 0) {
+    product =product *( number % 10);
+    number = Math.floor(number / 10);
+}
+
+console.log("Product of digits:", product);
+
+let number = 34576; 
+let reverse = 0;
+
+while (number > 0) {
+    reverse = reverse * 10 + number % 10;
+    number = Math.floor(number / 10);
+}
+console.log("Reverse of the number:", reverse);
+
+
+let num = 12321; 
+let originalNum = num;
+let reverse = 0;
+
+while (num> 0) {
+    reverse = reverse * 10 + num % 10;
+    num = Math.floor(num/ 10);
+}
+
+if (originalNum === reverse) {
+    console.log(" is a palindrome");
+} else {
+    console.log(" not a palindrome");
+}
+
+
+for (let i = 0; i <= 127; i++) {
+     console.log("ASCII Value:", i, " Character:", String.fromCharCode(i));
+ }
+ 
+ let number = 12;
+ for (let i = 1; i <= number; i++) {
+     if (number % i === 0) {
+         console.log(i);
+     }
+ }
+ 
+
+ let number = 5; 
+let factorial = 1;
+for (let i = 1; i <= number; i++) {
+    factorial *= i;
+}
+console.log( factorial); 
+
+
+let number1 = 45; 
+let number2 = 50; 
+let hcf;
+
+let smallerNumber = (number1 < number2) ? number1 : number2;
+
+for (let i = 1; i <= smallerNumber; i++) {
+    if (number1 % i === 0 && number2 % i === 0) {
+        hcf = i;
+    }
+}
+
+console.log("HCF of", number1, "and", number2, ":", hcf); 
 */
+
+let number1 = 12;
+let number2 = 18; 
+let lcm;
+
+let greaterNumber = (number1 > number2) ? number1 : number2;
+
+for (let i = 1; i <= greaterNumber; i++){
+    if (i % number1 === 0 && i % number2 === 0) {
+        lcm = i; 
+        break;
+    }
+}
+
+console.log("LCM of", number1, "and", number2, ":", lcm);
 
