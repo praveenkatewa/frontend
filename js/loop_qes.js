@@ -199,7 +199,7 @@ for (let i = 1; i <= smallerNumber; i++) {
 }
 
 console.log("HCF of", number1, "and", number2, ":", hcf); 
-*/
+
 
 let number1 = 12;
 let number2 = 18; 
@@ -215,4 +215,6 @@ for (let i = 1; i <= greaterNumber; i++){
 }
 
 console.log("LCM of", number1, "and", number2, ":", lcm);
+*/
+
 
