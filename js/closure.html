@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="closures.js">
+</head>
+<body>
+     <script>
+           function Outer(){
+     let name="praveen";
+     function inner(){
+          console.log(name)
+     }
+     return inner;
+ }
+ let answer=Outer();
+ answer() 
+// console.log(answer);
+     </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+<button id="btn">Click</button>
+<h1 id="h">this is my h1 text</h1>
+
+<button id="red">red</button>
+<button id="upperCase">upperCase</button>
+<button id="LowerCase">LowerCase</button>
+
+
+
+<select name="" id="">
+     <option value="" id="none">none</option>
+     <option value="" id="25px">25px</option>
+     <option value="" id="35px">35px</option>
+     <option value="" id="50px">50px</option>
+     <option value="" id="60px">60px</option>
+</select>
+
+
+     <script>
+          document.getElementById("btn").onclick=function(){
+               alert("hello java script!!")
+          }
+          document.getElementById("red").onclick=function(){
+               document.getElementById("h").style.color="red"
+
+          }
+          document.getElementById("upperCase").onclick=function(){
+               document.getElementById("h").style.textTransform="uppercase"
+          }
+          document.getElementById("LowerCase").onclick=function(){
+               document.getElementById("h").style.textTransform="LowerCase"
+          }
+
+          document.getElementById("none").onclick=function(){
+               document.getElementById("h").style.fontSize="none"
+          }
+          document.getElementById("25px").onclick=function(){
+               document.getElementById("h").style.fontSize='200px';
+          }
+        
+     </script>
+</body>
+</html>

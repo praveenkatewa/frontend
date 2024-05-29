@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+
+     <input  id="text" type="text">
+     <button id="move">move to array</button>
+     <button id="print">print name</button>
+
+     <h1 id="output"></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script>
+          // // setInterval(()=>{
+          // //      document.write("hello")
+
+          // // },1000)
+
+          // setTimeout(()=>{
+          //      console.log("hello i am settimeout funtion")
+
+          // },5000)
+          let arr=[];
+          document.getElementById("move").onclick=function(){
+               let a=document.getElementById("text").value;
+               // console.log(a)
+               
+              
+               arr.push(a);
+               document.querySelector("input").value="";
+               // console.log(arr)
+
+          }
+          document.getElementById("print").onclick=function(){
+             let i=0;
+
+             let b= setInterval(()=>{
+               if(arr.length>i){
+                    // document.write(arr[i])
+                    document.getElementById("output").innerHTML +=arr[i] + "";
+               
+
+               }else{
+                    clearInterval(b)
+
+               }
+
+             
+               i++;
+
+          },1000)
+          }
+
+
+          
+
+     </script>
+
+</body>
+</html>
