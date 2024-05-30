@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <input type="text" name="first" id="first" step="any">
+     <input type="text" name="second" id="second" step="any">
+
+     <select  id="ope">
+          <option value="+">add</option>
+          <option  value="-">min</option>
+          <option value="/">div</option>
+          <option  value="*">multi</option>
+     </select>
+     <br>
+     <br>
+     <br>
+     <button onclick="cal()">calculator</button><br>
+     <input type="text" id="res" readonly="" value="0"> 
+
+
+     <script type="text/javascript">
+          function cal(){
+               var opr1=document.getElementById('first').value;
+               var opr2=document.getElementById('second').value;
+               var ope=document.getElementById('ope').value;
+               if(ope=='+'){
+                    var res= parseInt(opr1)+parseInt( opr2);
+
+               }
+               if(ope=='-'){
+                    var res= parseInt(opr1)-parseInt( opr2);
+
+               }
+               if(ope=='/'){
+                    var res= parseInt(opr1)/ parseInt( opr2);
+
+               }
+               if(ope=='*'){
+                    var res= parseInt(opr1)* parseInt( opr2);
+                    console.log(res);
+               }
+               console.log(res);
+               // document.getElementById('res').value=res;
+
+
+          }
+
+           
+         
+
+
+
+     </script>
+     
+</body>
+</html>

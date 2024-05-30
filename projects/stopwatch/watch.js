@@ -1,46 +1,82 @@
-const display=document.getElementById("display");
-let timer=null;
-let startTime=0;
-let elapsedTime=0;
-let isRunning=false;
+
+var hr=0;
+var min=0;
+var sec=0;
+var count=0;
+
+var timer=false;
+
 
 function start(){
-     if(!isRunning){
-          startTime=date.now()-elapsedTime;
-          timer=setInterval(update,10);
-          isRunning=true;
-        
+     timer=true;
+     stopwatch();
+
+}
+function stop(){
+     timer=false;
+
+}
+function reset(){
+     timer=false;
+
+     hr=0;
+     min=0;
+     sec=0;
+     count=0;
+
+     document.getElementById("hr").innerHTML="00";
+     document.getElementById("min").innerHTML="00";
+
+     document.getElementById("sec").innerHTML="00";
+
+     document.getElementById("count").innerHTML="00";
+
+
+}
+
+function stopwatch(){
+     if(timer==true){
+          count=count+1;
+          if(count==100){
+               sec=sec+1;
+               count=0;
+
+          }
+          if(sec==60){
+               min=min+1
+               sec=0;
+
+          }
+          if(min==60){
+               hr=hr+1;
+               min=0;
+               sec=0;
+
+          }
+          var hrString=hr;
+          var minString=min;
+          var secString=sec;
+          var countString=count;
+          if(hr<10){
+               hrString="0"+ hrString;
+          }
+          if(min<10){
+               hrString="0"+ minString;
+          }
+          if(sec<10){
+               hrString="0"+ secString;
+          }
+          if(count<10){
+               hrString="0"+ countString;
+          }
+
+          document.getElementById("hr").innerHTML=hrString;
+          document.getElementById("min").innerHTML=minString;
+          document.getElementById("sec").innerHTML=secString;
+          document.getElementById("count").innerHTML=countString;
+          setTimeout("stopwatch()",10);
 
      }
-     
 
 }
 
-function stop(){
-     
-}
-
-function reset(){
-     
-}
-
-
-function update(){
-     const currentTime=Date.now();
-     elapsedTime=currentTime-startTime;
-
-     let hours= math.floor(elapsedTime /(1000 *60 *60));
-     let minutes= math.floor(elapsedTime /(1000 *60 )%60);
-     let seconds=math.floor(elapsedTime / 1000 % 60);
-     let milliseconds=math.floor(elapsedTime % 1000 /10);
-
-     hours=String(hours).padStart(2,"0");
-     minutes=String(minutes).padStart(2,"0");
-     seconds=String(seconds).padStart(2,"0");
-     milliseconds=string(milliseconds).padStart(2,"0");
-
-     display.textcontent=`${hours}:${minutes}:${seconds}:${milliseconds}`;
-     
-
-
-}

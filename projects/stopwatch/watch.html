@@ -5,69 +5,32 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
      <link rel="stylesheet" href="style.css">
-     
 </head>
 <body>
-     <h1 id="myH1">stopwatch</h1>
-
      <div id="container">
-          <div id="display">
-               00.00.00.00
+          <div id="time">
+               <span class="digit" id="hr">00</span>
+               <span class="txt"> hr</span>
+               <span class="digit" id="min">00</span>
+               <span class="txt">min</span>
+               <span class="digit" id="sec">00</span>
+               <span class="txt">sec</span>
+               <span class="digit" id="count">00</span>
+          </div>
+          <div id="btn-container">
+               <button class="btn" id="start" onclick="start()">start</button>
+               <button class="btn" id="stop" onclick="stop()">stop</button>
+               <button class="btn" id="reset" onclick="reset()">reset</button>
+
 
           </div>
-          <div id="controls">
-               <button id="startbtn" onclick="start()">start</button>
-               <button id="stopbtn" onclick="stop()">stop</button>
-               <button id="resetbtn" onclick="reset()">reset</button>
 
-          </div>
+
      </div>
 
 
 
-
-
-
-     <script >
-        var hr=0;
-        var min =0;
-        var sec=0;
-        var count =0;
-        var timer=false;
-
-
-function start(){
-     timer=true;
-     stopwatch();
-
-    
-     
-
-}
-
-function stop(){
-     timer=false;
-
-     
-}
-
-function reset(){
-
-     
-}
-function stopwatch(){
-     if(timer==true){
-          count=count+1;
-          
-          setTimeout("stopwatch()",10)
-     }
-
-
-}
-
-
-
-     </script>
+     <script src="watch.js"> </script>
      
 </body>
 </html>
