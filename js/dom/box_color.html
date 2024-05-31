@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, rerum,
+      quos, obcaecati dicta iusto ducimus assumenda iure voluptatem dolores
+      molestias dolorum aliquam eos autem voluptatibus libero harum perspiciatis
+      pariatur! Similique porro quas, esse facere voluptatum voluptatem nobis
+      officia cum molestias culpa illum qui doloribus consectetur perspiciatis,
+      ipsa, mollitia ea sed.
+    </div>
+    <br />
+    <br />
+
+    <button id="plus">+</button> <button id="minus">-</button>
+
+    <!-- <input type="text" placeholder="enter your color" id="color">
+   <input type="text" placeholder="enter Your number" id="number">
+   <button id="btn">Submit</button>
+
+
+
+   <div class="box" id="1">1</div>
+   <div class="box" id="2">2</div>
+   <div class="box" id="3">3</div>
+   <div class="box" id="4">4</div>
+   <div class="box" id="5">5</div>
+   <div class="box" id="6">6</div>
+   <div class="box" id="7">7</div> -->
+
+    <script>
+      let counter = 16;
+
+      document.querySelector("#plus").onclick = function () {
+        counter++;
+        document.querySelector(".container").style.fontSize = counter + "px"
+      };
+
+      document.querySelector("#minus").onclick = function () {
+        counter--;
+        document.querySelector(".container").style.fontSize = counter + "px"
+      };
+
+      //     document.querySelector("#btn").onclick = function(){
+
+      //         let color = document.querySelector("#color").value;
+      //         let no = document.querySelector("#number").value;
+
+      //         let all = document.querySelectorAll(".box");
+      //         console.log(color,no,all)
+
+      //         for(let i of all){
+
+      //             if(i.id == no){
+
+      //                 i.style.backgroundColor = color;
+      //             }
+      //         }
+
+      //    }
+    </script>
+  </body>
+</html>
