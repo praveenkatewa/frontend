@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+
+
+     <script>
+          /*
+         let prom= fetch('https://jsonplaceholder.typicode.com/posts ');
+     //     console.log(prom);
+     prom.then((item)=>{
+          // console.log(item)
+          // console.log(item.status)  // it use for single target output(key)
+          // console.log(item.json)     // here json is key in form of funtion .to run funtion
+          // console.log(item.json())   // it show funtion value
+          // here u know that json also return promise. . so use .then
+          item.json().then((item)=>{
+               // console.log(item)        // it show all the data of json file 
+
+               for(let i of item){
+                    console.log(i.id,i.title)     // it show id and title of array
+               };
+
+          })
+
+     }).catch((error)=>{                           // if promiss not fullfill then it run
+          console.log(error)
+     })
+
+     // it show response
+*/
+let prom=fetch('//dummyjson.com/test');
+console.log(prom);
+prom.then((item)=>{
+     // console.log(item)
+     // console.log(item.json())
+     item.json().then((item)=>{
+          console.log(item)
+          for(let i of item){
+               console.log(item)
+          }
+     })
+})
+
+
+     </script>
+</body>
+</html>

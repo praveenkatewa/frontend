@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <script>
+          /*
+          let prom=fetch('http://dummyjson.com/users');
+          // console.log(prom);
+          prom.then((item)=>{
+               // console.log(item.json)          //it show json as funtion
+               //console.log(item.json())            //it show json data
+               item.json().then((data)=>{             //  json aslo fulfill promiss so use .then 
+                    // console.log(data)
+                    for(i of data.users){
+                         // console.log(i)
+                         console.log(i.id,i.firstName,i.lastName)
+                    }
+               })
+          })
+               */
+
+
+
+                async function fetchApi(){
+
+                    let data=  await fetch('http://dummyjson.com/users');
+                    let json_data= await data.json()
+                    // console.log(json_data);
+                    // json_data.users.map((item)=>{
+                    //      console.log(item)
+                    // }
+                    let d= json_data.users.filter((item)=>{
+                          return item.age>25;
+                    })
+                   console.log(d)
+
+                }
+               fetchApi()
+
+     </script>
+</body>
+</html>
