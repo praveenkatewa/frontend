@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+<script>
+     let abc= {
+          output(){
+               console.log("i an output funtion")
+          }
+     };
+     let xyz={
+          show(){
+               console.log("I an show funtion")
+          }
+     };
+     xyz.__proto__=abc;
+
+     console.log(xyz);
+     xyz.show()
+     xyz.output()
+</script>
+</body>
+</html>
